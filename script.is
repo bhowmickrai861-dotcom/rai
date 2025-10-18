@@ -1,0 +1,32 @@
+document.addEventListener("DOMContentLoaded",()=>{
+constloginForm=document.getElementByld("loginForm");
+if(login Form){
+login form.addEventListener("submit",function(e){
+e.preventDefault();
+ const name =document .getElementByld("studentName").value;
+ const id =document .getElementByld("studentId").value;
+ const teacher=document .getElementByld("teacher Name").value;
+ const password =document .getElementByld("examPassword").value;
+ if (password==="examl23"){
+ sessionStorage.setltem("studentName"name);
+ window.location,href="exam.html";
+ }else{
+ alert( "In valid exam password!");
+ }
+ });
+ }
+ const examFOrm=document. getElementByld("examForm");
+ if(examForm){
+ examFrom.addEvemtListener("submit",function(e){
+ e.preventDefaulf();
+ let score = 0;
+ if(document.querySelector('input[name="q1"]:'checked'?.value==="Paris")score++;
+  if(document.querySelector('input[name="q2"]:'checked'?.value==="JavaScript")
+	  score++;
+  window.location.href ='result.html?score=${score}';
+ });
+ }
+});
+  
+  
+
